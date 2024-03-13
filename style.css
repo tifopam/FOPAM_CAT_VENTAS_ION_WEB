@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+
+}
+
+:root{
+
+    --main-color: #ff002b;
+    --sec-color: #fdfd96;
+    --text-color: #fdfffc;
+    --bg-color: #000814;
+
+}
+
+::selection{
+
+    color: var(--text-color);
+    background-color: var(--main-color);
+
+}
+
+.container{
+
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+    
+}
+
+section{
+
+    padding: 4rem 0 3rem;
+
+}
+
+
+body{
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+img{
+
+    width: 100%;
+
+}
+
+
+header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0, 4%, 15%/10%);
+
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+
+.logo{
+
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-transform: uppercase;
+
+}
+
+.logo span{
+
+    color: var(--main-color);
+    font-weight: bold;
+
+}
+
+#cart-icon{
+
+    font-size: 1.8rem;
+    cursor: pointer;
+
+}
+
+.cart{
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    right: -100%;  
+    width: 360px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: var(--bg-color);
+    box-shadow: -2px solid 4px hsl(0, 4%, 15%/10%);
+    border: 1px solid var(--main-color);
+    transition: 1.7s;
+
+}
+
+.tienda{
+
+    margin-top: 2rem;
+
+}
+
+.titulo-productos{
+
+    font-style: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+}
+
+.contenido-tienda{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+
+}
+
+.productos{
+
+    position: relative;
+    transition: .5s ease-in-out;
+
+}
+
+.productos:hover{
+    padding: 10px;
+    border: 2px solid var(--sec-color);
+
+}
+
+.producto-imagen{
+    width: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+
+.titulo-product{
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+
+}
+
+.precio-prect{
+
+    font-weight: 500;
+
+}
+
+.add-cart{
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--text-color);
+    padding: 11px;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.add-cart:hover{
+
+    background: var(--sec-color);
+    color: var(--text-color);
+
+}
+
+@media (max-w)

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=devive-width, initial-scale=1.0">
+    <title>Tienda</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo"><span>T</span>ienda</a>
+            
+            <i class="bx bx-shopping-bag" id="cart-icon"></i>
+
+            <div class="carro">
+                <h3 class="titulo-carro">Mi carrito</h3>
+
+                <div class="contenido-carro"></div>
+
+            <div class="total">
+                <div class="titulo-total">Total</div>
+                <div class="precio-fianl">$0</div>
+            </div>
+
+            <form action="https://checkout.wompi.co/p/" method="GET">
+                <!-- OBLIGATORIOS -->
+                <input type="hidden" name="public-key" value="pub_test_X0zDA9xoKdePzhd8a0x9HAez7HgGO2fH" />
+                <input type="hidden" name="currency" value="COP" />
+                <input type="hidden" name="amount-in-cents" value="49000" />
+                <input type="hidden" name="reference" value="4XMPGKWWPKWQ" />
+                <input type="hidden" name="signature:integrity" value="37c8407747e595535433ef8f6a811d853cd943046624a0ec04662b17bbf33bf5"/>
+                <button type="submit">Pagar con Wompi</button>
+              </form>
+            </div>
+        
+        </div>
+    </header>
+
+    <section class="contenido tienda">
+        <h3 class="titulo-productos">Productos</h3>
+
+        <div class="contenido-tienda">
+
+            <div class="productos">
+                <img src="img/ram.webp" alt="" class="producto-imagen">
+                <h2 class="nombre-product">Memoria Ram</h2>
+                <span class="precio-product">$160000</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <div class="productos">
+                <img src="img/mouse.jpg" alt="" class="producto-imagen">
+                <h2 class="nombre-product">mouse</h2>
+                <span class="precio-product">$100000</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <div class="productos">
+                <img src="img/teclado.jpg" alt="" class="producto-imagen">
+                <h2 class="nombre-product">teclado</h2>
+                <span class="precio-product">$200000</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
