@@ -116,6 +116,13 @@ header{
 
 }
 
+.cart.active{
+
+    right: 0;
+    transition: .5s;
+    
+}
+
 .tienda{
 
     margin-top: 2rem;
@@ -193,4 +200,52 @@ header{
 
 }
 
-@media (max-w)
+@media (max-width: 1000px){
+
+    .nav{
+        padding: 15px;
+    }
+
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section{
+        padding: 3rem 0 2rem;
+    }
+
+    .shop{
+        margin-top: 2rem;
+    }
+
+}
+
+@media (max-width: 400px){
+
+    .nav{
+        padding: 11px;
+    }
+
+    .logo{
+        font-size: 1rem;
+    }
+    .cart{
+
+        width: 320px;
+
+    }
+
+}
+
+@media (max-widht: 360px){
+
+    .shop{
+        margin-top: 1rem;
+    }
+
+    .cart{
+        width: 280px;
+    }
+
+}
